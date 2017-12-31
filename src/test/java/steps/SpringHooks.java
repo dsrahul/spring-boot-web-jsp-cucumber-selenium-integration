@@ -22,7 +22,8 @@ public class SpringHooks {
     @Before
     public static void createAndStartService() throws Throwable {
         service = new ChromeDriverService.Builder()
-                .usingDriverExecutable(new File("d:\\chromedriver.exe"))
+                //.usingDriverExecutable(new File("d:\\chromedriver.exe"))
+                .usingDriverExecutable(new File("src\\test\\resources\\driver\\chromedriver.exe"))
                 .usingAnyFreePort()
                 .build();
         service.start();
