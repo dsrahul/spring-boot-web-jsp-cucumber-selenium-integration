@@ -1,0 +1,6 @@
+language: java
+sudo: enabled
+jdk:
+  - oraclejdk8
+addons:
+  chrome: stable
