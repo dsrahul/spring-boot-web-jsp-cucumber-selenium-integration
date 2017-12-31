@@ -31,6 +31,6 @@ public class StepDefinitions extends AbstractSpringTests {
     public void userIsPresentedWithAWelcomeMessage() throws Throwable {
 
         assertEquals("LOGIN", driver.getTitle());
-        assertTrue(driver.findElement(By.id("login")).isDisplayed());
+        assertTrue(driver.findElement(By.id("sign-in")).isDisplayed());
     }
 }

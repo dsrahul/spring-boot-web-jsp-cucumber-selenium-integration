@@ -3,38 +3,25 @@
 <head>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/css/custom.css">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <TITLE>LOGIN</TITLE>
 <body>
-<div class="container main-section">
-    <div class="row">
-        <div class="col-md-12 text-center user-login-header">
-            <h1>Login Form</h1>
-            <p>Made with<span> Bootstrap</span></p>
+<div class="container">
+
+    <form class="form-signin">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="remember-me"> Remember me
+            </label>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-md-4 col-sm-8 col-xs-12 col-md-offset-4 col-sm-offset-2 login-image-main text-center">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12 user-image-section">
-                    <img src="/images/businessman.png"/>
-                </div>
-                <div class="col-md-12 col-sm-12 col-xs-12 user-login-box">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="User Name" id="usr">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Password" id="usr">
-                    </div>
-                    <a id="login" href="#" class="btn btn-defualt">Login</a>
-                </div>
-                <div class="col-md-12 col-sm-12 col-xs-12 last-part">
-                    <p>Not registered?<a href="#"> Create an account</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+        <button id="sign-in" class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+
+</div> <!-- /container -->
 </body>
 </html>
