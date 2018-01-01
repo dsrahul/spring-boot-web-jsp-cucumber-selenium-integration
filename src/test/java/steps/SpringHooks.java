@@ -21,26 +21,27 @@ public class SpringHooks {
 
     @Before
     public static void createAndStartService() throws Throwable {
-        service = new ChromeDriverService.Builder()
+        driver = Browser.getInstance();
+        /*service = new ChromeDriverService.Builder()
                 //.usingDriverExecutable(new File("d:\\chromedriver.exe"))
-                .usingDriverExecutable(new File("src\\test\\resources\\driver\\chromedriver.exe"))
+                .usingDriverExecutable(new File("src/test/resources/driver/chromedriver.exe"))
                 .usingAnyFreePort()
                 .build();
         service.start();
         final ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--headless");
-        chromeOptions.addArguments("--disable-gpu");
+        chromeOptions.addArguments("--disable-gpu");*/
 
         /*DesiredCapabilities capabilities = DesiredCapabilities.chrome();
         String[] listCapability={"--start-maximized","--disable-extensions","--disable-translate"};
         capabilities.setCapability("chrome.switches", listCapability);*/
 
-        final DesiredCapabilities capabilities = new DesiredCapabilities();
+        /*final DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setJavascriptEnabled(true);
         capabilities.setCapability(
                 ChromeOptions.CAPABILITY, chromeOptions
         );
-        driver = new RemoteWebDriver(service.getUrl(),capabilities);
+        driver = new RemoteWebDriver(service.getUrl(),capabilities);*/
     }
 
     @After
@@ -49,7 +50,8 @@ public class SpringHooks {
             final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
             scenario.embed(screenshot, "image/png"); //stick it in the report
         }
-        driver.close();
+        //driver.close();
+        Browser.close();
     }
     public static WebDriver getDriver() {
         return driver;
