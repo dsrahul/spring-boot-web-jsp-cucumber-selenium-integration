@@ -10,5 +10,5 @@ addons:
       - google-chrome-stable
 os: linux
 before_install:
-  - - chmod +x travis-before.sh
+  - chmod +x travis-before.sh
   - ./travis-before.sh
