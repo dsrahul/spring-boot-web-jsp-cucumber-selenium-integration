@@ -12,7 +12,7 @@ os: linux
 before_install:
   - |
     sudo apt-get install unzip
-    wget -N http://chromedriver.storage.googleapis.com/2.9/chromedriver_linux64.zip -P ~/Downloads
+    wget -N http://chromedriver.storage.googleapis.com/2.34/chromedriver_linux64.zip -P ~/Downloads
     unzip ~/Downloads/chromedriver_linux64.zip -d ~/Downloads
     chmod +x ~/Downloads/chromedriver
     sudo mkdir ~/selenium
