@@ -14,7 +14,8 @@ public class Browser {
     private static WebDriver driver = null;
     private static String os = System.getProperty("os.name");
     private static String chromeDriverPathWIN = "D:\\chromedriver.exe";// can be changed for your PC
-    private static String chromeDriverPathLINUX = System.getProperty("user.home")+"/selenium/chromedriver";
+    //private static String chromeDriverPathLINUX = System.getProperty("user.home")+"/selenium/chromedriver";
+    private static String chromeDriverPathLINUX = System.getProperty("user.home")+"/chromedriver";
     private static String chromePathLINUX="";
     private static String chromePathWIN="";
     private static String firefoxPathLINUX= System.getProperty("user.home")+"/selenium/ff46/firefox";
