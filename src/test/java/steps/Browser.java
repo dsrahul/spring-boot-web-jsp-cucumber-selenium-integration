@@ -13,7 +13,7 @@ import java.io.IOException;
 public class Browser {
     private static WebDriver driver = null;
     private static String os = System.getProperty("os.name");
-    private static String chromeDriverPathWIN = "D:\\chromedriver.exe";// can be changed for your PC
+    private static String chromeDriverPathWIN = "src/test/resources/driver/chromedriver.exe";// can be changed for your PC
     //private static String chromeDriverPathLINUX = System.getProperty("user.home")+"/selenium/chromedriver";
     private static String chromeDriverPathLINUX = System.getProperty("user.home")+"/selenium/chromedriver";
     private static String chromePathLINUX="";
