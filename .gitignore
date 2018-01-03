@@ -17,6 +17,7 @@ factoryConfiguration.json
 .idea/**/tasks.xml
 .idea/dictionaries
 *.settings
+.vscode
 
 # Sensitive or high-churn files:
 .idea/**/dataSources/
