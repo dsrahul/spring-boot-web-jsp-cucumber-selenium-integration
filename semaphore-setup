@@ -1,24 +1,6 @@
-if [ "`echo -n`" = "-n" ]; then
-  n=""
-  c="\c"
-else
-  n="-n"
-  c=""
-fi
-
-echo $n Get chromedriver $c
-
 wget -N http://chromedriver.storage.googleapis.com/2.34/chromedriver_linux64.zip -P ~/Downloads
-
-echo $n Unzip chromedriver.zip $c
-
 unzip ~/Downloads/chromedriver_linux64.zip -d ~/Downloads
-
-echo $n Make it executable $c
 chmod +x ~/Downloads/chromedriver
-echo $n Move it to a suitable location $c
 sudo mkdir ~/selenium
 sudo mv -f ~/Downloads/chromedriver ~/selenium/chromedriver
 sudo ln -s ~/selenium/chromedriver /usr/bin/chromedriver
-
-echo $n Setup completed successfully $c
