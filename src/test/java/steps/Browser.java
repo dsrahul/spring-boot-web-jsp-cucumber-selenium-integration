@@ -119,7 +119,7 @@ public class Browser {
 
     public static void close() {
         driver.close();
-        driver = null;// to avoid closeing time of browser by JVM
+        driver = null;// to avoid closing time of browser by JVM
     }
 
     private static DesiredCapabilities getLocalChrome() {
